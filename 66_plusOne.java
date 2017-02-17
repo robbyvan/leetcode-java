@@ -4,7 +4,7 @@ public class Solution {
     int carry = 0;
     int[] digits2 = new int[n+1];
     for (int i = n - 1; i > -1; i--){
-      if (nums[i] < 9){
+      if (digits[i] < 9){
         digits[i] += 1;
         digits2[i+1] = digits[i];
         return digits;
